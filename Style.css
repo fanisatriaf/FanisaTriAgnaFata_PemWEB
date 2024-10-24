@@ -1,0 +1,104 @@
+   /* Global Styles */
+    body {
+        background-color: #E5D9F2;
+        font-family: Tahoma;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Set the height to 100vh to center vertically */
+    }
+
+    /* Container for Profile and Info */
+    .container {
+        display: flex;
+        align-items: center;
+        gap: 30px; /* Space between profile picture and table */
+        background-color: #F5EFFF;
+        padding: 20px;
+        border-radius: 9px;
+        box-shadow: 0px 1px 9px 5px rgba(0, 0, 0, 255.2);
+    }
+
+    /* Profile Picture Styles */
+    .profile-pic {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 5px solid white;
+        box-shadow: 0px 1px 9px 5px rgba(0, 0, 0, 255.2);
+    }
+
+    .profile-pic img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+
+    /* Info Table Styles */
+    .info-table {
+        width: 450px;
+        position: relative;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    th, td {
+        padding: 15px;
+        text-align: left;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    th {
+        background-color: #CDC1FF;
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    td {
+        background-color: #A594F9;
+        color: black;
+    }
+
+    tr:last-child td {
+        border-bottom: none;
+    }
+
+    /* Button Styles */
+    .button-container {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 20px;
+    }
+
+    .button {
+        background: linear-gradient(135deg, #6e8efb, #a777e3); /* Gradient background */
+        color: #fff;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        transition: all 0.3s ease; /* Smooth transition */
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Add shadow */
+    }
+
+    .button:hover {
+        background: linear-gradient(135deg, #a777e3, #6e8efb); /* Reverse gradient on hover */
+        box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+        transform: translateY(-3px); /* Lift button on hover */
+    }
+
+    .button:active {
+        transform: translateY(2px); /* Slightly push down when clicked */
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
